@@ -3,7 +3,7 @@
 Copiar el siguiente diseño web utilizando HTML y CSS de forma tal que la web se visualize correctamente en cualquier dispositivo (celular, tablet, laptop y monitor).
 
 
-![alt text](https://github.com/rubensato/TP-Parcial_LPPA_2/blob/master/img/parcial2.phg?raw=true)
+![alt text](https://github.com/rubensato/TP-Parcial_LPPA_2/master/img/parcial2.phg?raw=true)
 
 
 ---
