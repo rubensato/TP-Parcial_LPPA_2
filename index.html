@@ -25,7 +25,7 @@
             <div id="bloque-cabecera">
                 <div id="cabecera-principal">
                     <div id="cuadroBusqueda">
-                        <input type="search" id="buscarCiudad" placeholder="escriba nombre de la ciudad...">
+                        <input type="search" id="buscarCiudad" placeholder="buscar ciudad...">
                     </div>
                 </div>
                 <div id="cabecera-secundario">
@@ -46,30 +46,31 @@
             </div>
             <div id="bloque-indicador">
                 <div id="indicador-principal">
-                    clima general
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
+                    <div id="imgClimaActual">
+                        <img id="imagenClimaActual" src="./img/imagenClimaActual.png" alt="" />
+                    </div>
+                    <div id="tempActual">
+                        <p id="tempNumero">12&deg;</p><p id="tempUnidad">C</p>
+                    </div>
+                    <div id="diaHoraActual">
+                        <p id="diaActual">Lunes, </p><p id="horaActual">16:00</p>
+                    </div>
+                    <div id="previsionActual">
+                        <div id="nubosidadActual">
+                            <img id="imagenNubosidad" src="./img/nubosidadChico.png" alt="" />
+                            <p id="textoNubosidad">Mayormente Nublado</p>
+                        </div>
+                        <div id="lluviaActual">
+                            <img id="imagenLluvia" src="./img/probLluviaChico.png" alt="" />
+                            <p id="textoLluvia">Lluvias - 30 &percnt;</p>
+                        </div>
+                    </div>
+                    <div id="imgCiudadActual">
+                        <p id="ciudadActual">Rosario</p>
+                    </div>
                 </div>
                 <div id="indicador-secundario">
                     clima datos varios y prevision
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
-                    <br/>
-                    linea
                 </div>
             </div>
         </div>
