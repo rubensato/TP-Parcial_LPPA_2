@@ -29,6 +29,10 @@ var codigoCiudad = 3838583;
         var nubosidad = document.getElementById('textoNubosidad');
         nubosidad.textContent = data.weather[0].description;
 
+        //nombre de la ciudad actual
+        console.log(data.name);
+        var nombreCiudad = document.getElementById('ciudadActual');
+        nombreCiudad.textContent = data.name;
 
         //Indicadores
         //sensacion termica
@@ -70,5 +74,34 @@ var codigoCiudad = 3838583;
         presion.textContent = data.main.pressure + ' hPa';
     })
 // }
+
+
+
+// function pronosticoSemana(codigoCiudad){
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=31.556601&lon=-63.534519&units=metric&lang=es&appid=9faa10eb7e7327f87d533a5993817491')
+    .then(response => response.json())
+    .then(dataSemanal => {
+        console.log(dataSemanal);
+        //obtengo la prevision semanal
+        console.log(dataSemanal.daily);
+        console.log(dataSemanal.daily[0].temp.min);
+        console.log(dataSemanal.daily[0].temp.max);
+
+        dataSemanal.daily.pop();
+
+        dataSemanal.daily.forEach(function(infoDia, indice) {
+            let tempMax = document.querySelector('#tempMaxDia'+indice);
+            tempMax.textContent = (Math.round(infoDia.temp.max)).toString() + '°C';
+            let tempMin = document.querySelector('#tempMinDia'+indice);
+            tempMin.textContent = (Math.round(infoDia.temp.min)).toString() + '°C';
+
+        })
+    
+    })
+
+
+// }
+
+
 
 
