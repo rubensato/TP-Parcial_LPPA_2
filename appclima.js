@@ -78,7 +78,7 @@ var codigoCiudad = 3838583;
 
 
 // function pronosticoSemana(codigoCiudad){
-    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=31.556601&lon=-63.534519&units=metric&lang=es&appid=9faa10eb7e7327f87d533a5993817491')
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=-32.946819&lon=-60.63932&units=metric&lang=es&appid=9faa10eb7e7327f87d533a5993817491')
     .then(response => response.json())
     .then(dataSemanal => {
         console.log(dataSemanal);
