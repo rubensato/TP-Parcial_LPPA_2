@@ -7,7 +7,7 @@ var codigoCiudad = 3838583;
 
 
 // function climaActual(codigoCiudad) {
-    fetch('http://api.openweathermap.org/data/2.5/weather?id='+ codigoCiudad +'&lang=es&appid=9faa10eb7e7327f87d533a5993817491')
+    fetch('https://api.openweathermap.org/data/2.5/weather?id='+ codigoCiudad +'&lang=es&appid=9faa10eb7e7327f87d533a5993817491')
     .then(response => response.json())
     .then(data => {
         //todos los datos
@@ -16,7 +16,7 @@ var codigoCiudad = 3838583;
         //icono de tiempo
         console.log(data.weather[0].icon);
         var iconcode = data.weather[0].icon;
-        var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         var imagenClima = document.getElementById('imagenClimaActual');
         imagenClima.src = iconurl;
 
