@@ -38,7 +38,7 @@ var codigoCiudad = 3838583;
         //sensacion termica
         console.log(Math.round(data.main.feels_like - 273));
         var temperaturaST = document.getElementById('valorST');
-        temperaturaST.textContent = Math.round(data.main.feels_like - 273) + '°C';
+        temperaturaST.textContent = (Math.round(data.main.feels_like - 273)).toString() + ' °C';
         //vientos
         console.log(data.wind.speed);
         var vientos = document.getElementById('valorVientos');

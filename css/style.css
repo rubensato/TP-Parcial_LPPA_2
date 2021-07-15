@@ -313,8 +313,52 @@ body{
 
 /*media queries - comportamiento responsivo*/
 @media (max-width: 1024px) {
+  #clima {
+    width: 100%;
+  }
+  
+  #bloque-cabecera {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  #cabecera-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    border-top-left-radius: 0px;
+  }
+  
+  /*CABECERA SECUNDARIA*/
+  #cabecera-secundario {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F6F8;
+    border-top-right-radius: 0px;
+  }
+  
+  #bloque-indicador {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*INDICADORES PRINCIPAL*/
+  #indicador-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 0px;
+  }
 
+  #indicador-secundario {
+    width: 100%;
+    background-color: #F6F6F8;
+    border-bottom-right-radius: 0px;
+    padding: 40px;
+  }
 
 }
 
