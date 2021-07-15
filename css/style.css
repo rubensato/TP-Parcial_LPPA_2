@@ -216,7 +216,7 @@ body{
   font-weight: bolder;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 
@@ -226,16 +226,89 @@ body{
   width: 70%;
   background-color: #F6F6F8;
   border-bottom-right-radius: 20px;
+  padding: 40px;
 }
 
+#pronosticoDias {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pronosticoSemana {
+  width: 13%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.diaSemana {
+  font-size: 10px;
+}
+
+.pronosticoTemp {
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tempMax {
+  color: rgb(233, 7, 7);
+}
+
+.tempMin {
+  color: rgb(72, 72, 233);
+}
+
+
+
+#panelndicadores {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#tituloIndicadores {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.indicadores {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.indicador {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.valorIndicador {
+  font-size: 25px;
+  font-weight: bold;
+  color: royalblue;
+}
 
 
 /*media queries - comportamiento responsivo*/
 @media (max-width: 1024px) {
 
-  .container{
-    width: 100%;
-  }
 
 
 }
