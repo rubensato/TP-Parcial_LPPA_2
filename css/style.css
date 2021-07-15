@@ -160,6 +160,11 @@ body{
   border-bottom-left-radius: 20px;
 }
 
+#imagenClimaActual {
+  width: 220px;
+  height: 220px;
+}
+
 #tempActual {
   display: flex;
   flex-direction: row;
